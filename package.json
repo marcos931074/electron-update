@@ -1,16 +1,21 @@
 {
   "name": "electron-update",
   "version": "1.0.0",
-  "description": "",
+  "description": "ondev descrição",
   "main": "index.js",
+  "build": {
+    "appId": "electron.update"
+  },
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder"
   },
   "keywords": [],
-  "author": "",
+  "author": "ondev",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^11.1.0"
+    "electron": "^11.1.0",
+    "electron-builder": "^23.0.3"
   },
   "dependencies": {
     "uaup-js": "latest"

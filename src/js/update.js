@@ -9,7 +9,7 @@ const defaultStages = {
     Unzipping: "Instalando...", // When Unzipping the Archive into the Application Directory.
     Cleaning: "Finalizando...", // When Removing Temp Directories and Files (ex: update archive and tmp directory).
     Launch: "Executando..." // When Launching the Application.
-};
+}
 
 const updateOptions = {
     gitRepo: "electron-update", // [Required] Your Repo Name
@@ -21,6 +21,6 @@ const updateOptions = {
     progressBar: document.getElementById("download"), // {Default is null} [Optional] If Using Electron with a HTML Progressbar, use that element here, otherwise ignore
     label: document.getElementById("download-label"), // {Default is null} [Optional] If Using Electron, this will be the area where we put status updates using InnerHTML
     stageTitles: defaultStages, // {Default is defaultStages} [Optional] Sets the Status Title for Each Stage
-};
+}
 
-uaup.Update(updateOptions);
+uaup.Update(updateOptions)
